@@ -1,0 +1,13 @@
+{
+  "name": "javascriptsessions",
+  "version": "1.0.0",
+  "description": "Practicing JavaScript sessions",
+  "main": "demo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jagadish Kumar",
+  "license": "ISC",
+  "type": "module"
+}
