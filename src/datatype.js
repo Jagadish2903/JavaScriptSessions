@@ -79,6 +79,7 @@ const title ="this is my book";
 //title ="nju"; //this will throw error since reassignment also is not possible 
 console.log(title);
 //Note : So const is something like final keyword in java 
+//const identifier is used for fixed values 
 
 
 
