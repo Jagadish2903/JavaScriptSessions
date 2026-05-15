@@ -44,4 +44,8 @@ console.log(typeof null);//Object
 console.log(typeof undefined);//underfined
 console.log(null === undefined);//false
 console.log([] == []); //false cox for the value of the array it takes the value of Memory address 
+console.log(typeof []);//Object
 console.log([]===[]);//false
+console.log(""==" ");//false
+console.log(""===" ");//false
+
