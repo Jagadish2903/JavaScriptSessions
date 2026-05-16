@@ -262,3 +262,20 @@ switch (browser6.toLowerCase()) {
 // 4. Nested or Dependent Logic
 //    Example: if user is Admin → check department → allow actions.
 //    Switch-case becomes messy when decisions depend on multiple variables.
+
+
+//Program for Vowel or consonant 
+let ch = 'n'
+switch (ch) {
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+        console.log(`${ch} is a vowel`);
+        break;
+
+    default:
+        console.log(`${ch} is not a vowel and is a consonant`);
+        break;
+}
