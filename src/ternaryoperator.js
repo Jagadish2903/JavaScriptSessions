@@ -6,23 +6,23 @@
 //
 
 
-let amount =50;
-let flag=amount>=10 ? true:false;
+let amount = 50;
+let flag = amount >= 10 ? true : false;
 console.log(flag);//true
 
 
-let element='link';
-let action=element==='link'?'click':'dontClick'
+let element = 'link';
+let action = element === 'link' ? 'click' : 'dontClick'
 console.log(action);//click
 
-//Multiple conditions operator 
-let m=10;
-let flag=m<5?true:m<8?true:m=10?'hi':'bye';
+//Multiple conditions operator  also called as nested ternary 
+let m = 10;
+let flag = m < 5 ? true : m < 8 ? true : m = 10 ? 'hi' : 'bye';
 console.log(flag);
 
 
-let age=17;
-let isEligible=age>=18?`Eligible for Voting`:`Not Elible for Voting`
+let age = 17;
+let isEligible = age >= 18 ? `Eligible for Voting` : `Not Elible for Voting`
 console.log(isEligible);
 
 
@@ -57,7 +57,7 @@ let name = "Jaga";
 let age = 30;
 let salary = 22.33;
 let isActive = true;
-console.log(name, age, salary, isActive); 
+console.log(name, age, salary, isActive);
 // Output: Jaga 30 22.33 true
 //
 // 3. This is useful for debugging or displaying multiple variables at once,
@@ -77,6 +77,6 @@ console.log(name, age, salary, isActive);
 let name2 = "Jaga";
 let age2 = 30;
 let salary2 = 22.33;
-let isActive2= true;
-console.log(`${name2} ${age2} ${salary2} ${isActive2}`); 
+let isActive2 = true;
+console.log(`${name2} ${age2} ${salary2} ${isActive2}`);
 

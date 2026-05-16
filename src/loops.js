@@ -191,13 +191,13 @@ for (; ;) {
 // For Loop:
 // - Use when the number of iterations is known in advance.
 // - Best for fixed ranges or datasets.
-// - Example (UI Automation): iterate through all dropdown options.
+// - Example (UI Automation): iterate through all dropdown options, Month dropdown , Footer Links , Menu Items
 // - Example (API Automation): send 10 requests with different payloads.
 
 // While Loop:
 // - Use when the number of iterations is unknown and depends on a condition.
 // - Best for waiting, polling, or retry logic.
-// - Example (UI Automation): wait until a button becomes enabled, Webtable Pagination
+// - Example (UI Automation): wait until a button becomes enabled, Webtable Pagination , wait for page loading
 // - Example (API Automation): poll an endpoint until status = "Completed".
 //
 // Quick Rule:
