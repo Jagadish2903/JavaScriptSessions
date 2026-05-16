@@ -19,6 +19,7 @@ console.log(action);//click
 let m = 10;
 let flag = m < 5 ? true : m < 8 ? true : m = 10 ? 'hi' : 'bye';
 console.log(flag);
+//if conditions are more then its better we can switch to the if else 
 
 
 let age = 17;
