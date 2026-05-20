@@ -203,3 +203,94 @@ for (; ;) {
 // Quick Rule:
 // - Known count → for loop
 // - Unknown count → while loop
+
+
+
+
+
+// Do-While Loop:
+
+
+
+//
+// 1. Definition:
+//    - Executes the statement block at least once.
+//    - After the first execution, it checks the condition.
+//    - If the condition is true, it continues; otherwise, it stops.
+//
+// 2. Syntax:
+do {
+    // code to execute
+} while (condition);
+
+// 3. Example: Print 1 to 5
+let k = 1;
+do {
+    console.log(k);
+    k++;
+} while (k <= 5);
+// Output: 1 2 3 4 5
+//
+// 4. Key Points:
+//    - Guaranteed to run once, even if the condition is false initially.
+//    - Useful when you need at least one execution before checking the condition.
+//
+// 5. Use Cases in Automation:
+//    - UI Automation: attempt login at least once, then retry while captcha persists.
+//    - API Automation: send a request at least once, then repeat until status changes.
+//    - General: ensure minimum one execution (e.g., prompt user input, retry logic).
+
+//Example 2. 
+let x = 10;
+do {
+    console.log(x);
+    x--;
+} while (x >= 1)
+//Output: 10 9 8 7 6 5 4 3 2 1
+
+//Example 3: 
+let y = 1;
+do {
+    y++;
+    console.log(y);
+} while (y <= 10)
+
+//Output:
+//2 3 4 5 6 7 8 9 10 11 
+
+
+//Example 4 
+let u = 1;
+do {
+    u++;
+    console.log(u);
+    u++;
+} while (u <= 10);
+
+//Output : 2 4 6 8 10
+
+//Example 5
+let t = 1;
+do {
+    console.log(t);
+    t++;
+} while (t <= 5)
+t++;
+
+//Note : It wont reach t++ which is after the while so it will execute and give output as 12345
+
+//Example 6
+let r = 1;
+do {
+    console.log(r);
+    r = r + 2;
+} while (r <= 10)
+
+
+//Example 7 with break 
+let r = 1;
+do {
+    console.log(r);
+    r = r + 2;
+    break;
+} while (r <= 10)
