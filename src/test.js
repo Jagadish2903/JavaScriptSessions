@@ -115,4 +115,4 @@ let empdata = {
 }
 
 console.log(empdata.devices[1]);
-console.log(empdata[devices][1]);
+console.log(empdata[devices][1]);//will throw error
