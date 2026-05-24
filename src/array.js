@@ -146,3 +146,7 @@ for (let j = pop.length - 1; j >= -5; j--) {
 // 4. Array length only counts numeric indices (0 to highest valid index).
 //    - pop.length = 4, even though "-3" exists as a property.
 // 5. Iterating with negative indices usually gives undefined, unless explicitly set.
+
+
+
+

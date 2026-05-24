@@ -115,4 +115,12 @@ let empdata = {
 }
 
 console.log(empdata.devices[1]);
-console.log(empdata[devices][1]);//will throw error
+//console.log(empdata[devices][1]);//will throw error
+
+let empJson = JSON.stringify(empdata)
+console.log(empJson);
+
+//To print all the json as pretty
+let empJson2 = JSON.stringify(empdata, null, 2)
+console.log(empJson2);
+
