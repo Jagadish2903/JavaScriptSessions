@@ -91,3 +91,43 @@ for (let j = products.length - 1; j >= 0; j--) {
 // macbook
 // - Reverse iteration using index.
 // - Useful for countdowns or reverse traversal.
+
+console.log("==================================================");
+
+//Using For of loop to print in reverse order 
+//Introduce the new variable 
+
+let count = products.length - 1;
+for (let e of products) {
+    console.log(products[count]);
+    count--;
+}
+
+console.log("==================================================");
+//Note there is a glitch in this ...No use of e in this 
+//To still make use of this e we can do again like below that is adding e = counts
+//But still its not recommended 
+
+let counts = products.length - 1;
+for (let e of products) {
+    e = counts;
+    console.log(products[e]);
+    counts--;
+}
+
+
+
+
+//Note: For in Loop is specifically designed for Objects
+
+// Summary Notes:
+// - for loop → index control, partial traversal, reverse iteration.
+// - for...of → clean value iteration, best for full traversal.
+// - for...in → keys (indexes/props), mainly for objects.
+// - Reverse iteration → most reliable with classic for loop.
+// - For...of reverse workarounds exist but are not recommended.
+
+// Use Cases Recap:
+// - UI Automation: iterate dropdowns, lists of elements.
+// - API Automation: loop through payloads, IDs, or response arrays.
+// - General: search, validation, reverse printing, object property traversal.
