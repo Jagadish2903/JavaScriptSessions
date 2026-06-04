@@ -191,6 +191,9 @@ function printingFunctions() {
     console.log("Printing Function2");
 }
 
+
+printingFunctions();
+
 // In Module-based JavaScript (ES Modules):
 // - Declaring duplicate functions with the same name will throw an error.
 // - Duplicate function names are not allowed even if it is overloaded.
@@ -209,6 +212,7 @@ function printing() {
 function printing(name) {
     console.log("Printing Function2");
 }
+
 
 // In languages like Java or C#, method overloading allows multiple functions
 // with the same name but different parameter lists.
@@ -229,3 +233,5 @@ function printing(name) {
 //   a) Default parameters
 //   b) Rest parameters (...args)
 //   c) Conditional logic inside the function
+
+
