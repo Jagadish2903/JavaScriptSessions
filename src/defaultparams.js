@@ -102,4 +102,4 @@ console.log(t4); // 5 → null is treated as a real value, not default
 // - Always check whether you want to allow null as a valid input or fallback to default.
 
 let t5 = add(5, NaN);
-console.log(t5); // NaN
+console.log(t5); // NaN 
