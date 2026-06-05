@@ -39,6 +39,13 @@ console.log("===========================");
 
 
 
+//with return 
+let result = (function (a, b) {
+    return a + b;
+})(10, 20);
+console.log(result);
+
+
 //Type Of Functions:
 //1.Simple Functions
 //2.Function Expression
