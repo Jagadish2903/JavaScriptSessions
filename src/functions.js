@@ -235,3 +235,24 @@ function printing(name) {
 //   c) Conditional logic inside the function
 
 
+
+
+//Call by Value : 
+//Whenever we are calling a function by a value its called Call By Value 
+//Example:
+
+/**
+ * 
+ * @param {Number} food 
+ * @param {Number} tax 
+ */
+function calculateBilling(food, tax) {
+    let totalAmount = food + tax;
+    return totalAmount;
+
+}
+
+let total = calculateBilling(1000, 200);
+console.log(total);
+
+//Here food and tax are called params and 1000 and 200 are values or arguments ..calling this function using values is called call by value 
