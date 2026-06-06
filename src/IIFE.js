@@ -39,7 +39,8 @@ console.log("===========================");
 
 
 
-//with return 
+//with return :
+//Here result is not the assignment its just the storing of return value 
 let result = (function (a, b) {
     return a + b;
 })(10, 20);
