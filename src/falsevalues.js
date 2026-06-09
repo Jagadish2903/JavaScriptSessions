@@ -1,6 +1,6 @@
 // ======================= Falsy Values =======================
 
-// In JavaScript, there are 8 falsy values:
+// In JavaScript, there are 10 falsy values: and will be applicable in the context of if else statement
 // 1. 0
 // 2. -0
 // 3. 0n (BigInt zero)

@@ -124,3 +124,13 @@ console.log(empJson);
 let empJson2 = JSON.stringify(empdata, null, 2)
 console.log(empJson2);
 
+console.log("==================");
+let num = [1, 2, 3, 4, 5]
+let r1 = num.splice(0, 2, 5);
+console.log(r1);//[1,2]
+console.log(num);//[ 5, 3, 4, 5 ]
+
+
+let cart = ["imac", "iphone", "macbood"];
+let r1 = cart.splice(0, 1, "Pen");
+console.log(cart);//[ 'Pen', 'iphone', 'macbood' ]
