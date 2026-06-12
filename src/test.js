@@ -134,3 +134,15 @@ console.log(num);//[ 5, 3, 4, 5 ]
 let cart = ["imac", "iphone", "macbood"];
 let r1 = cart.splice(0, 1, "Pen");
 console.log(cart);//[ 'Pen', 'iphone', 'macbood' ]
+
+console.log("==========================");
+
+let num = [10, 20, 30, 40, 50];
+let newArr = num.filter(e => e > 30);
+console.log(newArr);
+console.log(num);
+
+
+let num = [1, 2, 3, 4, 5];
+let result = num.reduce((sum, e) => sum = sum + e, 0);
+console.log(result); //15

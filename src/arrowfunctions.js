@@ -162,3 +162,103 @@ let userDetails2 = ({ name, age }) => console.log(name, age);
 
 
 userDetails2(user);//Jaga 33
+
+
+
+
+// includes() → accessor method
+// Checks whether an element is present in the array.
+// Returns a boolean value (true/false).
+// Does NOT change the original array.
+
+let num = [1, 2, 3, 4, 5];
+let flag = num.includes(3);
+console.log(flag); // true
+
+let arr = ["mac", "iphone", "mouse"];
+console.log(arr.includes("tablet")); // false
+
+let arr2 = ["mac", "iphone", "mouse", "pen"];
+console.log(arr2.includes("mac", -2)); // false (search starts at index length-2)
+
+console.log("====================================");
+
+// join() → accessor method
+// Joins every element in the array into a string with a separator.
+// Returns a string.
+// Does NOT change the original array.
+
+let cart = ["imac", "ipad", "Jag"];
+let newStr = cart.join("");
+console.log(newStr); // "imacipadJag"
+
+let cart2 = ["imac", "ipad", "Jag"];
+let newStr2 = cart2.join(" - ");
+console.log(newStr2); // "imac - ipad - Jag"
+
+let emptyArr = [];
+console.log(emptyArr.join(",")); // "" → empty string
+
+
+console.log("=================================");
+
+// 11. toString()
+// Converts the array into a comma-separated string.
+// Returns a string.
+// Does NOT change the original array.
+
+let cart3 = ["imac", "ipad", "Jag"];
+let str = cart3.toString();
+console.log(str);  // "imac,ipad,Jag"
+console.log(cart3); // [ 'imac', 'ipad', 'Jag' ]
+
+console.log("==============================");
+
+// 12. at()
+// Returns the element at the given index.
+// Supports negative indexes (counting from the end).
+// Does NOT change the original array.
+
+let num2 = [10, 20, 30, 40, 50];
+console.log(num2.at(2));   // 30 → element at index 2
+console.log(num2[2]);//30 
+console.log(num2.at(-1));  // 50 → last element
+console.log(num2.at(-3));  // 30 → third last element
+console.log(num2[-2]);//undefined ....Since [] wont support negative indexes 
+
+//Only at method supports negative index
+
+
+console.log("============================");
+
+// forEach() → accessor method
+// Executes a provided function once for each array element.
+// Does NOT change the original array.
+// Commonly used for iteration, logging, or applying side effects.
+//Syntax : forEach(callbackfn: (value: number, index: number, array: number[]) => void, thisArg?: any): void
+
+
+let arr = ["mac", "iphone", "mouse"];
+arr.forEach(function (item, index) {
+    console.log(index, item);
+});
+
+//using arrow function:
+arr.forEach((e) => {
+    console.log(arr.indexOf(e), e);
+});
+
+let nums = [10, 20, 30];
+nums.forEach((val, idx) => console.log(`Index ${idx}: ${val}`));
+
+let total = 0;
+let numbers = [1, 2, 3, 4];
+numbers.forEach(n => total += n);
+console.log(total);
+
+let users = [
+    { name: "Jag", role: "Tester" },
+    { name: "Sam", role: "Developer" }
+];
+users.forEach(u => console.log(`${u.name} → ${u.role}`));
+
