@@ -4,6 +4,23 @@
 // We can export constants, variables, functions, or classes.
 // Each item can be exported separately using the 'export' keyword.
 
+// ======================= Important Note =======================
+
+// Note :
+// Any console.log (or other top‑level statements) written outside of functions
+// will automatically execute when the module is imported.
+// This happens even if we do not explicitly export them.
+// ⚠️ They are part of the module’s top‑level code, so importing the file
+// will trigger those lines immediately.
+
+// Example:
+console.log("This will run automatically when the file is imported");
+
+// Even without 'export', the above line executes as soon as another file does:
+// import "./example.js";
+
+
+
 // 📘 Syntax:
 // export const variableName = value;
 // export function functionName() { ... }
@@ -51,3 +68,31 @@ function playing() {
 }
 
 export { Running, playing, sigme }
+
+
+
+
+
+// ======================= Export & Import Rules =======================
+
+// 1. Export items from one file and import them into another
+//    using the 'export' keyword for all functions and variables.
+
+// 2. Named exports:
+//    export { a, b, c }
+//    import { a, b, c } from "./example.js";
+
+// 3. Default export:
+//    - Only one default export is allowed per file.
+//    - It is not part of object destructuring.
+//    Example: export default function myFunc() { ... }
+
+// 4. Renaming imports:
+//    export { a, b, c }
+//    import { a as myA, b as myB, c as myC } from "./example.js";
+
+// 5. Import everything:
+//    import * as myApp from "./example.js";
+
+// 6. Built‑in modules like 'console.log' are available globally
+//    and do not require explicit import.
