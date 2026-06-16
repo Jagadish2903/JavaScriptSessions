@@ -39,29 +39,4 @@ bmw.start();    // BMW Start, 200, undefined
 bmw.parking();  // BMW Parking, Car Parking
 
 console.log("========================================");
-//Then how to access the parent class properties ...usign getters and return from that 
 
-//Example : 
-class Car1 {
-    speed = 100;
-    getSpeed1() {
-        return this.speed;
-    }
-    start1() {
-        console.log("Car Start");
-        console.log(this.speed);
-    }
-}
-
-class BMW1 extends Car1 {
-    speed = 200;
-
-    start1() {
-        console.log("BMW Start");
-        super.start1(); // still prints 200
-        console.log(super.getSpeed1()); // prints 100
-    }
-}
-
-let bmw1 = new BMW1();
-bmw1.start1();
