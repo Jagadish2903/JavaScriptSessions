@@ -146,3 +146,28 @@ console.log(num);
 let num = [1, 2, 3, 4, 5];
 let result = num.reduce((sum, e) => sum = sum + e, 0);
 console.log(result); //15
+
+
+
+//Callback
+
+let add = (a, b) => a + b;
+let sub = (a, b) => a - b;
+let mul = (a, b) => a * b;
+let div = (a, b) => a / b;
+
+
+function calculator(callback, a, b) {
+    console.log("Calculating values");
+    return callback(a, b);
+}
+
+let r1 = calculator(add, 10, 20);
+console.log(r1);
+
+let r2 = calculator(sub, 40, 20);
+console.log(r2);
+
+let r3 = calculator(mul, 10, 20);
+console.log(r3);
+
