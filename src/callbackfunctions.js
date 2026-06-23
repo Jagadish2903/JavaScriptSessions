@@ -177,3 +177,62 @@ doAction(sendKeys, "textBox", "Hello")// Starting actions
 // Real-Time Analogy
 // - Callbacks are like giving your phone number to a friend.
 // - They’ll call you back only when something happens (event, completion, or error).
+
+
+//📘 Callback with setTimeout – Notes
+
+/*Definition:
+- In Java, we use Thread.sleep to pause execution.
+- In JavaScript, we use setTimeout which takes 2 parameters:
+   1. A callback function (what to execute later)
+   2. Time in milliseconds (delay before execution)
+- Node.js/browser automatically calls the callback after the delay. 
+  We don’t explicitly invoke it.
+  */
+
+//Syntax:
+setTimeout(() => {
+    console.log("Hello");
+}, 2000);
+
+// Prints "Hello" after 2 seconds.
+
+
+/*
+ Debugging Use Case
+    - Instead of console.log, we can use `debugger;` inside setTimeout.
+- This pauses execution in DevTools(Inspect → Sources tab).
+- Useful for finding elements or checking state after a delay.
+*/
+
+//   Example:
+setTimeout(() => {
+    debugger;
+}, 2000);
+
+// Execution halts after 2 seconds, letting you inspect variables in the browser console.
+
+
+/*
+⚡ Real - Time Analogy
+    - Think of setTimeout like setting a ** reminder alarm **.
+- You give it a task(callback) and a delay(time).
+- After the delay, JavaScript automatically “rings the alarm” and executes the task.
+*/
+
+
+//Example 2 : 
+//Getting data from database after some time due to some connection time
+//It prints Getting data from database 
+//After 4 sec it will get UserData  
+
+function getData(callback) {
+    console.log("Getting data from database");
+    setTimeout(() => {
+        callback();
+    }, 4000)
+}
+
+getData(() => {
+    console.log("UserData");
+})
