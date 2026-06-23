@@ -29,7 +29,3 @@ This repository covers **fundamentals, callbacks, promises, async/await, and rea
 
 - [Array Methods](ca://s?q=JavaScript_array_methods_notes)
   - `map`, `filter`, `reduce`, `forEach`
-
-
-## 📂 Repository Structure
-
