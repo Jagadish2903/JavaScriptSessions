@@ -171,3 +171,65 @@ console.log(r2);
 let r3 = calculator(mul, 10, 20);
 console.log(r3);
 
+
+
+
+function startMachine() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("1. Machine started");
+            resolve();
+        }, 2000)
+    });
+}
+
+function boilWater() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("2.Water Boiled");
+            resolve();
+        }, 3000)
+    });
+}
+
+function addCofeePowder() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("3.Cofee Powder Added");
+            resolve();
+        }, 4000)
+    });
+}
+
+function pourInCup() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("4.Poured in Cup");
+            resolve();
+        }, 2000)
+    });
+}
+
+
+function serveCofee() {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("5.Cofee Served");
+            resolve();
+        }, 2000)
+    });
+}
+
+
+//Cofee Preparation : 
+
+async function makeCoffee() {
+    await startMachine();
+    await boilWater();
+    await addCofeePowder();
+    await pourInCup();
+    await serveCofee();
+    console.log("Cofee is ready...Enjoy it");
+}
+
+makeCoffee();
