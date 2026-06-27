@@ -7,7 +7,7 @@
 
 //  async keyword:
 // - Used with functions.
-// - Declares that the function will always return a Promise.
+// - Declares that the function will always return a Promise. (whether we write return promise or not ...by default its returning promise)
 // - Even if you return a simple value, it is wrapped in Promise.resolve().
 
 //  await keyword:
