@@ -233,3 +233,16 @@ async function makeCoffee() {
 }
 
 makeCoffee();
+
+
+
+
+async function getNumber2() {
+    return "Hello";
+}
+
+getNumber2().then((result) => {
+    console.log(result);
+});
+let te = await getNumber2();
+console.log(te);
